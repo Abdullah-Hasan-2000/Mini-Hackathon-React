@@ -5,7 +5,7 @@ const KarachiDashboard = () => {
   return (
     <div>
       <Navbar />
-      <h1>Karachi Branch Dashboard</h1>
+      
     </div>
   )
 }

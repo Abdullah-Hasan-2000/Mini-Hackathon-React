@@ -11,6 +11,8 @@ const LoginAdminScreen = () => {
     const handleSubmit = () => {
         console.log("Email:", email);
         console.log("Password:", password);
+
+        
     }
 
   return (
