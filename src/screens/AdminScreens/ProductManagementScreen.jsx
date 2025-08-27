@@ -23,7 +23,20 @@ const ProductManagementScreen = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!title || !views) return;
-    await axios.post('http://localhost:3000/posts', { title, views: Number(views) });
+    const res = await axios.get('http://localhost:3000/products');
+    const products = res.data;
+    const existingProduct = products.find(product => product.name === title);
+    if (existingProduct) {
+      alert('Product already exists');
+      return;
+    }
+    // Get the last numeric id
+    const numericIds = products
+      .map(p => typeof p.id === 'number' ? p.id : parseInt(p.id, 10))
+      .filter(id => !isNaN(id));
+    const lastId = numericIds.length > 0 ? Math.max(...numericIds) : 0;
+    const newId = lastId + 1;
+    await axios.post('http://localhost:3000/products', { id: newId, name: title, price: Number(views) });
     setRefresh(r => !r); // trigger table refresh
     handleClose();
   };

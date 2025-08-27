@@ -8,6 +8,7 @@ import UserDashboard from './screens/UserDashboard'
 import KarachiDashboard from './screens/BranchesPages/KarachiDashboard'
 import AdminDashboard from './screens/AdminScreens/AdminDashboard.jsx'
 import ProductManagementScreen from './screens/AdminScreens/ProductManagementScreen.jsx'
+import BranchManagementScreen from './screens/AdminScreens/BranchManagementScreen.jsx'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/branch-islamabad" element={<KarachiDashboard />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/product-management" element={<ProductManagementScreen />} />
+        <Route path="/branch-management" element={<BranchManagementScreen />} />
       </Routes>
     </>
   )
