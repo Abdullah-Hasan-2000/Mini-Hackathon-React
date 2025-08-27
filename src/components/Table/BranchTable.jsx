@@ -11,7 +11,7 @@ export default function ProductTable({ refresh }) {
   const [posts, setPosts] = React.useState([]);
 
   React.useEffect(() => {
-    fetch('http://localhost:3000/branch')
+    fetch('http://localhost:3000/branches')
       .then((res) => res.json())
       .then((data) => setPosts(data))
       .catch((err) => console.error('Failed to fetch posts:', err));
@@ -19,7 +19,6 @@ export default function ProductTable({ refresh }) {
 
   return (
     <>
-      {console.log("we are here")}
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="posts table">
           <TableHead>
