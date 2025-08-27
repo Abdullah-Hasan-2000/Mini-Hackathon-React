@@ -1,0 +1,63 @@
+{
+  "branches": [
+    {
+      "id": 1,
+      "name": "Lahore Branch",
+      "location": "Lahore",
+      "managerId": "branch_lhr",
+      "inventory": { "chicken": 50, "beef": 30, "mutton": 20, "bread": 100, "fries": 80 },
+      "employees": [ { "id": 1, "name": "Ali", "contact": "0300-1234567", "email": "ali@branch.com" } ],
+      "reviews": [ { "id": 1, "user": "Ahmed", "review": "Great food and service!" } ]
+    },
+    {
+      "id": 2,
+      "name": "Karachi Branch",
+      "location": "Karachi",
+      "managerId": "branch_khi",
+      "inventory": { "chicken": 60, "beef": 40, "mutton": 25, "bread": 120, "fries": 90 },
+      "employees": [ { "id": 2, "name": "Sara", "contact": "0301-2345678", "email": "sara@branch.com" } ],
+      "reviews": [ { "id": 2, "user": "Bilal", "review": "Amazing ambiance!" } ]
+    },
+    {
+      "id": 3,
+      "name": "Islamabad Branch",
+      "location": "Islamabad",
+      "managerId": "branch_isb",
+      "inventory": { "chicken": 55, "beef": 35, "mutton": 22, "bread": 110, "fries": 85 },
+      "employees": [ { "id": 3, "name": "Usman", "contact": "0302-3456789", "email": "usman@branch.com" } ],
+      "reviews": [ { "id": 3, "user": "Hina", "review": "Loved the food!" } ]
+    },
+    {
+      "id": 4,
+      "name": "Multan Branch",
+      "location": "Multan",
+      "managerId": "branch_mul",
+      "inventory": { "chicken": 45, "beef": 28, "mutton": 18, "bread": 90, "fries": 70 },
+      "employees": [ { "id": 4, "name": "Imran", "contact": "0303-4567890", "email": "imran@branch.com" } ],
+      "reviews": [ { "id": 4, "user": "Sadia", "review": "Nice staff!" } ]
+    },
+    {
+      "id": 5,
+      "name": "Faisalabad Branch",
+      "location": "Faisalabad",
+      "managerId": "branch_fsd",
+      "inventory": { "chicken": 48, "beef": 32, "mutton": 19, "bread": 95, "fries": 75 },
+      "employees": [ { "id": 5, "name": "Ayesha", "contact": "0304-5678901", "email": "ayesha@branch.com" } ],
+      "reviews": [ { "id": 5, "user": "Omar", "review": "Clean and quick service!" } ]
+    }
+  ],
+  "products": [
+    { "id": 1, "name": "Zinger Burger", "price": 450 },
+    { "id": 2, "name": "Fries", "price": 150 },
+    { "id": 3, "name": "Chicken Broast", "price": 500 },
+    { "id": 4, "name": "Beef Burger", "price": 400 },
+    { "id": 5, "name": "Club Sandwich", "price": 350 },
+    { "id": 6, "name": "Grilled Chicken", "price": 600 },
+    { "id": 7, "name": "Mutton Karahi", "price": 1200 },
+    { "id": 8, "name": "Chicken Nuggets", "price": 250 },
+    { "id": 9, "name": "Fish Fillet", "price": 700 },
+    { "id": 10, "name": "Paneer Roll", "price": 200 }
+  ],
+  "offers": [ { "id": 1, "discount": 20 } ],
+  "orders": [ { "id": 1, "userId": "user123", "branchId": 1, "product": "Zinger Burger", "quantity": 2 } ]
+}
